@@ -95,7 +95,23 @@ int main(void) {
 	// ianInfo[0] = 25;
 	// ^^ Illegal
 
+	//***** Defining Custom Data Types *****//
+	// Rather than typing the struct keyword every time, you can simply typedef
+	// and assign it an alias
+	// Usage: typedef <oldname> <newname>;
+	// ex. typedef char* string;
+	// that's in the CS50 library
+	// structures have a two word type name, really annoying
+	// ex. struct myInfo <variable name>
 
+	// Type define the structure
+	// typedef struct myInfo my_info;
+	// my_info; is now legal
+	// can also do it in the initial structure definition
+	// ex. typedef struct car {
+	//         ....
+	//     }
+	//     my_car;   <---- note the semicolon
 
 	return;
 }
